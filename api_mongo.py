@@ -7,7 +7,7 @@ from flask import json
 app=Flask(__name__)
 
 
-db= MongoClient("mongodb+srv://souvik:Souvik@sd.gvdzc.mongodb.net/cart?retryWrites=true&w=majority")
+db= MongoClient("mongodb+srv://<username>:<password>@sd.gvdzc.mongodb.net/cart?retryWrites=true&w=majority")
 dbi = db["cart"]
 collection=dbi["item"]
 
